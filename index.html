@@ -33,7 +33,7 @@
 							<ul>
 								<li><a href="#about">About</a></li>
 								<li><a href="#resume">Resume</a></li>
-								<!--<li><a href="#intro">Intro</a></li>-->
+								<li><a href="#photos">Photos</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -43,7 +43,7 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
+						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
@@ -65,11 +65,96 @@
 								<p></p>
 							</article>
 
-						<!-- About -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+
+
+						<!-- Photos -->
+
+						
+							<article id="photos">
+
+
+
+
+<div class="w3-content w3-display-container">
+
+	<div class="mySlides">
+		<img src="images/pic10.jpg" style="width:100%">
+		<div class="text"> <center><em>Sword-billed Humingbird</em></center></div>
+	</div>
+	
+	<div class="mySlides">
+		<img src="images/pic12.jpg" style="width:100%">
+		<div class="text"> <center><em>Coyote</em></center></div>
+	</div>
+
+	<div class="mySlides">
+		<img src="images/pic03.jpeg" style="width:100%">
+		<div class="text"> <center><em>Lapland Longspur</em></center></div>
+	</div>
+
+	<div class="mySlides">
+		<img src="images/pic04.jpeg" style="width:100%">
+		<div class="text"> <center><em>Musk Ox</em></center></div>
+	</div>
+
+	<div class="mySlides">
+		<img src="images/pic07.jpg" style="width:100%">
+		<div class="text"> <center><em>Arctic Tern</em></center></div>
+	</div>
+
+	<div class="mySlides">
+		<img src="images/pic05.jpeg" style="width:100%">
+		<div class="text"> <center><em>Semipalmated Sandpiper</em></center></div>
+	</div>
+
+	<div class="mySlides">
+		<img src="images/pic06.jpeg" style="width:100%">
+		<div class="text"> <center><em>King Eider</em></center></div>
+	</div>
+
+	<div class="mySlides">
+		<img src="images/pic09.jpg" style="width:100%">
+		<div class="text"> <center><em>Cerulean Warbler</em></center></div>
+	</div>
+
+
+	<div class="mySlides">
+		<img src="images/pic08.jpeg" style="width:100%">
+		<div class="text"> <center><em>Bluethroat</em></center></div>
+	</div>
+
+
+	<div class="mySlides">
+		<img src="images/pic11.jpeg" style="width:100%">
+		<div class="text"> <center><em>Red-necked Grebe</em></center></div>
+	</div>
+
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
 							</article>
 
 						<!-- Contact -->
@@ -349,7 +434,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Sina Shaikh. Adapted from <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Sina Shaikh. Using code from <a href="https://html5up.net">HTML5 UP</a> and <a href="https://www.w3schools.com">W3SCHOOLS</a>.</p>
 					</footer>
 
 			</div>
